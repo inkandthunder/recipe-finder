@@ -7,6 +7,7 @@ class Recipe
 	#base_uri 'https://food2fork.com/about/api'
     #default_params fields: "photoUrl,description", q: "search"
     #default_params key: ENV["FOOD2FORK_KEY"]
+    default_params key: key_value
 	format :json
 
 	def self.for term
